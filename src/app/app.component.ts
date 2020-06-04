@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-push-notification';
+
+  constructor(
+    //private _swPush: SwPush
+  ){}
+
+  /*
+  subscribeToNotifications(){
+    this._swPush.requestSubscription({
+      serverPublicKey: 
+    })
+  }*/
+
+  sendMeANotification(){
+    
+  }
 }

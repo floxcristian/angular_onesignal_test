@@ -1,13 +1,34 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>NgPushNotification</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "1d7d915a-9cf9-447d-9048-ef8c10f2cd20",
+        notifyButton: {
+          enable: true,
+        },
+        subdomainName: "utasample",
+        welcomeNotification: {
+          "title": "Universidad de Tarapacá",
+          "message": "Gracias por suscribirte!",
+          "url": "https://www.uta.cl/"
+        }
+      });
+    });
+  </script>
 </head>
+
 <body>
   <app-root></app-root>
 </body>
+
 </html>
